@@ -1,0 +1,57 @@
+<div  ng-app="onlineFormApp"  ng-controller="EducationdetailsCtrl" >
+    <div class="row">
+        <div class="col-md-6">
+
+            <div id="eduDiv">
+                Country  &nbsp;&nbsp; &nbsp; <select  id="sel1" ng-model="selectedvalue">
+                    <option ng-repeat="CN in Countries" value="{{CN.name}}">{{CN.name}}</option>
+                </select><br /> <br />
+            </div>
+            <div id="eduDiv">
+                State  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <select  ng-model="statevalue">
+                    <option ng-repeat="SN in States" value="{{SN.name}}">{{SN.name}}</option>
+                </select><br /> <br />
+            </div>
+            <div id="eduDiv">
+                City  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <select  ng-model="cityvalue">
+                    <option ng-repeat="Cy in cities" value="{{Cy.name}}">{{Cy.name}}</option>
+                </select><br /> <br />
+            </div>
+            <div id="eduDiv">
+                University   <select  ng-model="univalue">
+                    <option ng-repeat="un in universities" value="{{un.uname}}">{{un.uname}}</option>
+                    </select><br /> <br />
+                
+            </div>
+            <div id="eduDiv">
+                GPA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select  ng-model="gpavalue">
+                    <option ng-repeat="gp in gpa" value="{{gp.type}}">{{gp.type}}</option>
+                </select><br /> <br />
+            </div>
+
+
+        </div>
+
+
+        <div class="col-md-6">
+
+            <div id="div1"  ng-model="selectedvalue" >
+                Country : {{selectedvalue}} <br /><br />
+            </div>
+            <div  ng-model="statevalue">
+                State  : {{statevalue}}<br /><br />
+            </div>
+            <div  ng-model="cityvalue">
+                City  : {{cityvalue}}<br /><br />
+                </div>
+              <div  ng-model="univalue">
+                University  : {{univalue}}<br /><br />
+                  
+                </div>
+            <div ng-model="gpavalue">
+                GPA  : {{gpavalue}}<br /><br />
+
+            </div>
+            </div>
+    </div>
+</div>

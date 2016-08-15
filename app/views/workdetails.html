@@ -1,0 +1,27 @@
+<div ng-app="onlineFormApp" ng-controller="WorkdetailsCtrl" >
+    <div class="row">
+        <div class="col-md-6">
+            <div id="div1" ng-model="wrkexp">
+                Organization &nbsp;&nbsp;&nbsp;&nbsp;<input ng-model="wrkexp.organization" /> <br /> <br />
+                Role  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input ng-model="wrkexp.role" /><br /> <br />
+                From &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"  ng-model="wrkexp.yearfrom" /><br /> <br />
+                To &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"  ng-model="wrkexp.yearto" /><br /> <br />
+                State &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input ng-model="wrkexp.state" /><br /> <br />
+                Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input ng-model="wrkexp.country" /><br /> <br />
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+
+            <div  ng-model="wrkexp">
+                Organization : {{wrkexp.organization}} <br /><br />
+                Role  : {{wrkexp.role}}<br /><br />
+                From: {{wrkexp.yearfrom}}<br /><br />
+                To  : {{wrkexp.yearto}}<br /><br />
+                State  : {{wrkexp.state}}<br /><br />
+                Country  : {{wrkexp.country}}<br /><br />
+            </div>
+        </div>
+    </div>
+</div>

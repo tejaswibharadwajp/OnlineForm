@@ -1,0 +1,31 @@
+<div ng-app="onlineFormApp" ng-controller="PersonaldetailsCtrl">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="personal">
+                <div id="div1" ng-model="PersonalDetails">
+                    FirstName &nbsp;&nbsp;&nbsp;&nbsp;<input ng-model="PersonalDetails.firstname" /> <br /> <br />
+                    LastName  &nbsp;&nbsp;&nbsp;&nbsp;<input ng-model="PersonalDetails.lastname" /><br /> <br />
+                    Date of Birth&nbsp;&nbsp;<input type="date" ng-model="PersonalDetails.dob" /><br /> <br />
+                    Address Line&nbsp;&nbsp;<input ng-model="PersonalDetails.address" /><br /> <br />
+                </div>
+                <div id="div1">
+                    Gender  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <select ng-model="gendervalue">
+                        <option ng-repeat="details in gender" value="{{details.type}}">{{details.type}}</option>
+
+                    </select><br /> <br />
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div ng-model="PersonalDetails">
+                First Name : {{PersonalDetails.firstname}} <br /><br />
+                Last Name  : {{PersonalDetails.lastname}}<br /><br />
+                Date of Birth: {{PersonalDetails.dob | date: "MM/dd/yyyy"}}<br /><br />
+                Address  : {{PersonalDetails.address}}<br /><br />
+            </div>
+            <div ng-model="gendervalue"> Gender     : {{gendervalue}}  </div> <br /><br />
+        </div>
+    </div>
+</div>
